@@ -10,183 +10,185 @@
          url("./Resources/pacifico-v22-latin-regular.woff")format("woff"),
          url("./Resources/pacifico-v22-latin-regular.ttf")format("truetype");
 }
-html,body {
-    margin:0;
-    background: linear-gradient(to bottom right, rgb(52,19,48),rgb(91,74,89) 96%);
-    font-family: "oswald", sans-serif;
-    color: rgb(240, 240, 227);
-}
-a{
-    color: rgb(240, 240, 227); 
-    text-decoration: none;
-}
-.navbar-list,.left-container h4,.sign-title,h1 {
+* {
     margin: 0;
 }
-hr,.sign-title,.button,.rights,.footer p,.main-container p,.features-container h4 {
+.main-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+body,html {
+    font-size: 18px;
+    margin:0;
+    font-family: "oswald", sans-serif;
+    color: rgb(15, 15, 15);
+}
+.navbar-list a,.navbar-list2 a {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+.button,.rights,.footer p,.container2,#feature {
     text-align: center;
 }
-span {
-    font-family: "pacifico";
-    padding-left: 10px;
-    padding-right: 10px;
-}
-body {
-    display: flex;
-    flex-direction: column;
-}
-li:hover,.button:hover,.button-try:hover,.sec2 img,.slide {
+li:hover, button:hover,.sec2 img {
     cursor: pointer;
+}
+hr{
+    margin: 0 13rem 0 20rem;
+    
 }
 /* header section styles*/
 h1 {
-    text-align: left;
     font-weight: bold;
-    font-size: 45px;
-    width:150px;
-    padding-left: 10px;
+    font-size: 2.3rem;
+    width:34rem;
     font-family: "pacifico";
+    text-align: right;
+    color:rgb(30, 30, 167);
 }
-.header-container,.navbar{
+.header-cont,.navbar{
     display:flex;
     width: 100%;
     justify-content: flex-end;
 }
-.navbar li {
+.navbar-list {
+    font-size: 1.2rem;
     display: inline-flex;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-size: 25px;
+    justify-content: center;
+    list-style-type: none;
+    width: 84%;
     flex-wrap: wrap;
+}
+#sign {
+    font-size: 1.6rem;
 }
 .navbar-list li:hover {
     text-decoration: underline;
-    font-size:18px;
 }
-.navbar .sign {
-    padding-left: 120px;
+.navbar-list li {
+    width: 10rem;
+    text-align: center;
 }
 /* Section 1 styles*/
 .sec1 {
     width: 100%;
-    height: 560px;
+    height: 45rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: auto;
 }
-.left-container {
-    margin-top: 100px;
-    font-size: 50px;    
+.container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; 
+    text-align: center; 
+    align-items: center;
+    justify-content: space-around;
 }
-.left-container h4 {
-    padding-left: 30px;
-    width: 70%;
+button:hover {
+    background-color: rgb(8, 8, 51);
 }
-.right-container {
-    margin-top: 100px;
-    margin-left: 100px;
-    border: 2px solid rgb(197, 197, 46);
-    background-color: rgb(49, 8, 45);
-    flex-shrink: 2;
-    color:rgb(197, 197, 46);
-}
-.sign:hover {
-    font-size: 25px;
-}
-#username ,#password {
-   width: 300px;
-   height: 25px;
-   font-size: 16px;
-}
-.pass,.user,.submit-button{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.button:hover,.button-try:hover {
-    background-color: rgb(97, 97, 5);
-}
-.button-try {
-    width: 200px;
-    height: 50px;
-    font-size: 25px;
+.start {
+    width: 10rem;
+    height: 2.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    border: 2px solid rgb(240, 240, 227);
-    background-color: rgb(197, 197, 46);
-    color: rgb(49, 8, 45);
-    margin-top: 70px;
-    margin-left: 400px;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(15, 15, 15);
+    background-color: rgb(30, 30, 167);
+    color: rgb(255, 255, 255);
     font-family: "oswald", sans-serif;
+}  
+h2 {
+    padding-top: 2.5rem;
+    font-size: 2.8rem;
+    
 }
-.button {
-    width: 400px;
-    height: 44px;
-    border-radius:30px;
-    border: 2px solid rgb(240, 240, 227);
-    color: rgb(49, 8, 45);
-    background-color: rgb(197, 197, 46);
-    font-family: "oswald", sans-serif;
-    font-size: 25px;
-}   
-.submit-button {
-    padding-top: 25px;
-}
-.sign-title {   
-    font-weight: bold;
-    font-size: 25px;
-    padding-bottom: 30px;
-    padding-top: 20px;
+.appimg {
+    width:40rem;
+    height:20rem;
+    border-radius: 5px;
 }
 /* Section 2 styles*/
-.sec2 .container-feature{
+.sec2 {
     display: flex;
-    flex-basis: 300px;
-    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
+    width: 100%;
+    height: 60rem;
 }
-.sec2 h4 {
+.sec2 h2 {
+    padding-top: 0;
     width: 100%;;
     text-align: center;
-    padding-top: 50px;
-    font-size: 60px;
+    font-size: 2.8rem;
     font-weight: bold;
-    color: rgb(197, 197, 46);
+    color: rgb(15, 15, 15);
 }
-.sec2 img {
-    width: 700px;
-    height: 400px;
-    flex-shrink: 2;
+.container2 img {
+    height: 20rem;
+    width: 40rem;
+    border-radius: 5px;
+}
+.container2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
 }
 .sliders {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    flex-flow: row wrap;
     list-style-type: none;
     width: 30%;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    padding: 0;
+    align-items: center;
 } 
 .sliders li button {
-    margin: 20px;
-    width: 60px;
+    margin: 1.2rem;
+    width: 3.4rem;
     height: 6px;
-    border: 1px solid rgb(49, 8, 45);
+    border: 1px solid rgb(30, 30, 167);
 }
-.container-feature p {
+.container2 p {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
     text-align: center;
-    width: 500px;
-    font-size: 20px;
-    line-height: 50px;
 }
 /*Footer sytles*/
+.footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(15, 15, 15);;
+}
 .footer, .navbar-list2 li a {
-    color: rgb(197, 197, 46);
+    color: rgb(255, 255, 255);
 }
 .footer p {
-    margin-bottom:30px;
-    padding-top: 20px;
+    margin-bottom:1.7rem;
+    padding-top: 1.2rem;
 }
-.navbar-list2 {
+.navbar-list2,.social-media{
     list-style-type: none;
-    font-size: 20px;
-    line-height: 60px;
+    font-size: 1.2rem;
+    line-height: 3.4rem;
+}
+.navbar-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.social-media {
+    font-family:"pacifico";
 }

@@ -7,64 +7,40 @@
     <link rel="stylesheet" href="C:\Users\melbaabo\Desktop\Mes docs\Mes Projets\Web-Project\Snipe\index.css">
     <title>Home Page</title>
 </head>
-<body id="body">
+<body>
     <!--header section with navigation-->
-    <header class="header-container">
+    <header class="header-cont">
         <h1>Snipe</h1>
         <nav class="navbar">
             <ul class="navbar-list">
                 <li><a href="./About.html" class="about">About</a></li>
                 <li><a href="#feature" class="feature">Features</a></li>
                 <li><a href="./contact.html" class="contact">Contact</a></li>
-                <li><a href="./account.html" class="sign">Account</a></li>
+                <li><a href="./account.html" id="sign">Sign In</a></li>
             </ul>
         </nav>
     </header>
     <main class="main-container">
         <!-- main page-->
         <section class="sec1">
-            <div class="left-container">
-                <h4>Starve the distractions...feed the focus and reward the effort!</h4>
-                <button class="button-try">Try <span>Snipe</span></button>
-            </div>
-            <div class="right-container">
-                <div class="sign-in">
-                    <h2 class="sign-title"><span>Snipe</span> account sign In</h2>
-                </div>
-                <!-- login section -->
-                <form class="form">
-                    <div class="user">
-                        <label for="username" class="login">Username</label>
-                        <br>
-                        <input type="text" id="username" name="login" required>
-                        <hr>
-                    </div>
-                    <br>
-                    <div class="pass">
-                        <label for="password" class="login">Password</label>
-                        <br>
-                        <input type="password" id="password" name="login" required>
-                        <hr>
-                    </div>
-                    <br>
-                    <!--submit button-->
-                    <div class="submit-button">
-                        <input type="submit" value="Sign in" class="button">
-                    </div>
-                </form>
+            <div class="container1">
+                <h2>Starve the distractions...feed the focus and reward the effort!</h2>
+                <img class="appimg" src="./Resources/focus_orig.jpg">
+                <button class="start">Get started</button>
             </div>
         </section> 
+        <hr>
         <!--application features-->
         <section class="sec2">
-           <div class="container-feature">
-               <h4 id="feature">Features</h4>
-               <img id="feature1" src="./Resources/feature 1.png">
-               <p id="description1">Text describing the feature number 1, tracking projects and spliting tem into several smaller projects each is allocated a number of Pomodoros, 
-                    each pomodoro once started activates a 25 minutes timer, once the time ends a pomodoro mark is gained and a break of 5 minutes start until next pomodoro task.</p>
-               <img id="feature2" src="./Resources/feature 2.png">
-               <p id="description2">Text describing the feature number 2, some other cool feature.</p>
-               <img id="feature3" src="./Resources/feature 3.png">
-               <p id="description3">Text describing the feature number 3, some other cool feature.</p>
+           <div class="container2">
+               <h2 id="feature">Features</h2>
+                <img id="feature1" class="fimg" src="./Resources/focus_orig.jpg">
+                <p id="description1">Text describing the feature number 1,<br> tracking projects and spliting tem into several smaller projects each is allocated a number of Pomodoros,<br> 
+                    each pomodoro once started activates a 25 minutes timer, <br>once the time ends a pomodoro mark is gained and a break of 5 minutes start until next pomodoro task.</p>
+                <img id="feature2" class="fimg" src="./Resources/feature 2.png">
+                <p id="description2">Text describing the feature number 2, some other cool feature.</p>
+                <img id="feature3" class="fimg" src="./Resources/feature 3.png">
+                <p id="description3">Text describing the feature number 3, some other cool feature.</p>
                <ul class="sliders">
                 <li>
                     <button id="slide1" class="slide"></button>
@@ -79,6 +55,7 @@
             </div>
         </section>
     </main>
+    <hr>
     <!--footer section-->
     <footer class="footer">
         <nav class="navbar-footer">
@@ -86,6 +63,11 @@
                 <li><a href="./About.html" class="about-footer">About</a></li>
                 <li><a href="#feature" class="feature-footer">Features</a></li>
                 <li><a href="./contact.html" class="contact-footer">Contact</a></li>
+            </ul>
+            <ul class="social-media">
+                <li><a href="" class="twitter"></a>twitter</li>
+                <li><a href="" class="face"></a>facebook</li>
+                <li><a href="" class="linkd"></a>linkdin</li>
             </ul>
         </nav>
          <div class="rights">
