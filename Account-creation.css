@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "oswald";
+    src: url("./Resources/oswald-v49-latin-500.woff2")format("woff2"),
+         url("./Resources/oswald-v49-latin-500.woff")format("woff"),
+         url("./Resources/oswald-v49-latin-500.ttf")format("truetype");
+}
+@font-face {
+    font-family: "pacifico";
+    src: url("./Resources/pacifico-v22-latin-regular.woff2")format("woff2"),
+         url("./Resources/pacifico-v22-latin-regular.woff")format("woff"),
+         url("./Resources/pacifico-v22-latin-regular.ttf")format("truetype");
+}
+*{
+    margin: 0;
+}
+html,body {
+    font-size: 18px;
+    margin:0;
+    font-family: "oswald", sans-serif;
+    color: rgb(15, 15, 15);
+    height: 100%;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.button {
+    text-align: center;
+}
+li:hover, button:hover {
+    cursor: pointer;
+}
+span {
+    font-family: "pacifico";
+    color: rgb(30, 30, 167);
+    padding-right: 1.2rem;
+
+}
+hr {
+    margin: 0 2rem 0 .0;
+}
+/* header section styles*/
+h1 {
+    font-weight: bold;
+    font-size: 2.3rem;
+    width:34rem;
+    font-family: "pacifico";
+    text-align: right;
+    color:rgb(255, 255, 255);
+}
+.header-A {
+    position: fixed;
+    background-color: rgb(30, 30, 167);
+}
+.header-A,.navbar-A{
+    display:flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.navbar-list-A {
+    font-size: 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 84%;
+    flex-wrap: wrap;
+}
+.navbar-list-A li:hover {
+    text-decoration: underline;
+}
+.navbar-list-A li {
+    width: 10rem;
+    text-align: center;
+}
+/* account creation form*/
+.container-A-1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.sign-in-A {
+    display: flex;
+    flex-direction:  column;
+    border: 2px solid rgb(30, 30, 167);
+    height:20rem;
+    width: 25rem;
+    border-radius: 5%;
+    justify-content: space-evenly;
+}
+.sign-title {
+     text-align: center;
+}
+.form {
+    padding: 2rem 2rem;
+}
+.submit-button-A {
+    align-self: center;
+    padding-left: 5rem;
+}
+.button {
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 167);
+    border-radius: 5px;
+    font-size: 1.2rem;
+} 
+.login-A {
+    font-size: 1.3rem;
+    width: 15rem;
+    border: 1px solid rgb(104, 102, 102);
+}
+.link a {
+    color: rgb(15, 15, 15);
+    text-decoration: underline;
+}
