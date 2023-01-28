@@ -4,34 +4,46 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="C:\Users\melbaabo\Desktop\Mes docs\Mes Projets\Web-Project\Snipe\index.css">
+     <link rel="stylesheet" href="./Account-creation.css">
      <title>Sign up</title>
    </head>
    <body>
-      <header></header>
-      <section>
-        <div class="sign-in">
+      <header class="header-A">
+        <!--header section with navigation-->
+        <h1><a href="./Homepage.html">Snipe</a></h1>
+        <nav class="navbar-A">
+            <ul class="navbar-list-A">
+                <li><a href="./About.html" class="about-A">About</a></li>
+                <li><a href="./contact.html" class="contact-A">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+      <section class="container-A-1">
+        <div class="sign-in-A">
             <h2 class="sign-title"><span>Snipe</span> account sign In</h2>
             <form class="form">
                 <div class="user">
                     <label for="username" class="login">Username</label>
                     <br>
-                    <input type="text" id="username" name="login" required>
+                    <input type="text" id="username" name="login" class="login-A" required>
                     <hr>
                 </div>
                 <br>
                 <div class="pass">
                     <label for="password" class="login">Password</label>
                     <br>
-                    <input type="password" id="password" name="login" required>
+                    <input type="password" id="password" name="login" class="login-A" required>
                     <hr>
                 </div>
                 <br>
                 <!--submit button-->
-                <div class="submit-button">
+                <div class="submit-button-A">
                     <input type="submit" value="Sign in" class="button">
                 </div>
             </form>
+        </div>
+        <div>
+            <p class="account link">You don't have an account yet? create one <a href="/contact.html">here</a></p>
         </div>
       </section>
    </body>
