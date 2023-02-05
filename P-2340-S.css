@@ -58,6 +58,7 @@ a, #hdcl, .s1ctn3b,.footer {
 }
 #nblog {
     flex-basis: 60rem;
+    padding-left: 0.3rem;
 }
 .clk2,.clk3,.clk4{
     padding-left: 1.5rem;
@@ -70,7 +71,7 @@ a, #hdcl, .s1ctn3b,.footer {
 .sec1 {
     margin-top: 5rem;
     display: grid;
-    grid-template-rows: 10rem 22rem 5rem;
+    grid-template-rows: 10rem 32rem 5rem;
     row-gap: 1.11rem;
     justify-content: center;
 }
@@ -127,6 +128,7 @@ a, #hdcl, .s1ctn3b,.footer {
 }
 .sec2 {
     flex-direction: row;
+    padding:0 1rem;
 }
 .s2ctn2 {
     flex-direction: column;
