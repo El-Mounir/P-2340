@@ -9,70 +9,108 @@
 </head>
 <body>
     <!--header section with navigation-->
-    <header class="header-cont">
-        <h1>Snipe</h1>
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li><a href="./About.html" class="about">About</a></li>
-                <li><a href="#feature" class="feature">Features</a></li>
-                <li><a href="./contact.html" class="contact">Contact</a></li>
-                <li><a href="./account.html" id="sign">Sign In</a></li>
-            </ul>
+    <header class="hdc" id="hdcont">
+        <nav  class="hdc_d1">
+          <div class="nvb">
+              <ul class="nvb_list">
+                  <li class="nbl" id="nblog"><a href="#sec1t" id="hdcl">Snipe</a></li>
+                  <li class="nbl clk1"><a href="./About.html" class="about">About</a></li>
+                  <li class="nbl clk2"><a href="#s1ctn3bl" class="feature">Features</a></li>
+                  <li class="nbl clk3"><a href="./contact.html" class="contact">Contact</a></li>
+                  <li class="nbl clk4"><a href="./account.html">Sign In</a></li>
+                </ul>
+          </div>
         </nav>
     </header>
-    <main class="main-container">
-        <!-- main page-->
-        <section class="sec1">
-            <div class="container1">
+    <main class="mctn">
+        <!-- upper page section -->
+        <section class="sec1" id="sec1t">
+            <div id="C1" class="s1ctn1">
                 <h2>Starve the distractions...feed the focus and reward the effort!</h2>
-                <img class="appimg" src="./Resources/focus_orig.jpg">
-                <button class="start"><a href="./account.html">Get started</a></button>
+            </div>
+            </div>
+            <div class="s1ctn2">
+                <img class="s1ctn2im" src="./Resources/focus_orig.jpg">
+            </div>
+            <div class="s1ctn3">
+                <button class="s1ctn3b" id="s1ctn3bl"><a href="./account.html">Get started</a></button>
             </div>
         </section> 
-        <hr>
         <!--application features-->
-        <section class="sec2">
-           <div class="container2">
-               <h2 id="feature">Features</h2>
-                <img id="feature1" class="fimg" src="./Resources/focus_orig.jpg">
-                <p id="description1">Text describing the feature number 1,tracking projects and spliting tem into several smaller projects each is allocated a number of Pomodoros, 
+        <section class="cont-box">
+          <div class="sec2">
+            <div id="sec2lfar" class="leftnav"></div>
+              <div id="s2ctn2cf1"class="s2ctn2 ctn1">
+                <div class="fs2ctn2 ctn1">
+                  <h2 id="feature" class="fts2ctn2">Feature 1</h2>
+                </div>
+                <div class="s2ctn2im fim1">
+                   <img id="feature1" class="fs2ctn2im" src="./Resources/focus_orig.jpg">
+                </div>
+                <div class="s2ctn2d fd1">
+                   <p id="description1" class="fs2ctn2d">Text describing the feature number 1,tracking projects and spliting tem into several smaller projects each is allocated a number of Pomodoros, 
                     each pomodoro once started activates a 25 minutes timer, once the time ends a pomodoro mark is gained and a break of 5 minutes start until next pomodoro task.</p>
-                <img id="feature2" class="fimg" src="./Resources/feature 2.png">
-                <p id="description2">Text describing the feature number 2, some other cool feature.</p>
-                <img id="feature3" class="fimg" src="./Resources/feature 3.png">
-                <p id="description3">Text describing the feature number 3, some other cool feature.</p>
-               <ul class="sliders">
-                <li>
-                    <button id="slide1" class="slide"></button>
-                </li>
-                <li>
-                    <button id="slide2" class="slide"></button>
-                </li>
-                <li>
-                    <button id="slide3" class="slide"></button>
-                </li>
-               </ul>
-            </div>
+                </div>
+              </div>
+              <div id="s2ctn2cf2" class="s2ctn2 ctn2">
+                <div class="fs2ctn2 ctn2">
+                  <h2 id="feature" class="fts2ctn2">Feature 2</h2>
+                </div>
+                <div class="s2ctn2im fim2">
+                  <img id="feature2" class="fs2ctn2im" src="./Resources/feature 2.png">
+                </div>
+                <div class="s2ctn2d fd2">
+                  <p id="description2" class="fs2ctn2d">Text describing the feature number 1,tracking projects and spliting tem into several smaller projects each is allocated a number of Pomodoros, 
+                    each pomodoro once started activates a 25 minutes timer, once the time ends a pomodoro mark is gained and a break of 5 minutes start until next pomodoro task.</p>
+                </div>
+              </div>
+              <div id="s2ctn2cf3" class="s2ctn2 ctn3">
+                <div class="fs2ctn2 ctn3">
+                    <h2 id="feature" class="fts2ctn2">Feature 3</h2>
+                  </div>
+                <div class="s2ctn2im fim3">
+                  <img id="feature3" class="fs2ctn2im" src="./Resources/feature 3.png">
+                </div>
+                <div class="s2ctn2d fd3">
+                  <p id="description3" class="fs2ctn2d">Text describing the feature number 1,tracking projects and spliting tem into several smaller projects each is allocated a number of Pomodoros, 
+                    each pomodoro once started activates a 25 minutes timer, once the time ends a pomodoro mark is gained and a break of 5 minutes start until next pomodoro task.</p>
+                </div>
+              </div>
+            <div id="sec2rtar" class="rightnav"></div>
+          </div>
         </section>
+        <div class="s2ctn2slid" id="slidbctn">
+            <div class="s2ctn2slidctn">
+                <ul class="sliders">
+                    <li>
+                        <button id="slide1" class="slide"></button>
+                    </li>
+                    <li>
+                        <button id="slide2" class="slide"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
-    <hr>
     <!--footer section-->
     <footer class="footer">
-        <nav class="navbar-footer">
-            <ul class="navbar-list2">
-                <li><a href="./About.html" class="about-footer">About</a></li>
-                <li><a href="#feature" class="feature-footer">Features</a></li>
-                <li><a href="./contact.html" class="contact-footer">Contact</a></li>
-            </ul>
-            <ul class="social-media">
-                <li><a href="" class="twitter"></a>twitter</li>
-                <li><a href="" class="face"></a>facebook</li>
-                <li><a href="" class="linkd"></a>linkdin</li>
-            </ul>
-        </nav>
-         <div class="rights">
-            © All rights Reserved
-         </div>
+      <nav class="nvbf1">
+          <ul class="navbfl1">
+              <li><a href="./About.html" class="about-footer">About</a></li>
+              <li><a href="#s1ctn3bl" class="feature-footer">Features</a></li>
+              <li><a href="./contact.html" class="contact-footer">Contact</a></li>
+          </ul>
+      </nav>
+      <div class="fctnr">
+          <p>© All rights Reserved</p>
+      </div>
+      <nav class="nvbf2">
+        <ul class="nvbfl2">
+          <li><a href="" class="twitter"></a>twitter</li>
+          <li><a href="" class="face"></a>facebook</li>
+          <li><a href="" class="linkd"></a>linkdin</li>
+        </ul>
+      </nav>
     </footer>
     <script src="./P-2340-S.js"></script>
 </body>

@@ -10,193 +10,194 @@
          url("./Resources/pacifico-v22-latin-regular.woff")format("woff"),
          url("./Resources/pacifico-v22-latin-regular.ttf")format("truetype");
 }
-* {
+*{
     margin: 0;
+    padding: 0;
 }
-.main-container {
-    display: flex;
-    flex-flow: column wrap;
-}
-body,html {
+body {
     font-size: 18px;
-    margin:0;
     font-family: "oswald", sans-serif;
     color: rgb(15, 15, 15);
 }
 a {
-    color: rgb(255, 255, 255);
     text-decoration: none;
 }
-.button,.rights,.footer p,.container2,#feature {
-    text-align: center;
-}
-li:hover, button:hover,.sec2 img {
+li:hover, button:hover,.sec2 img ,.leftnav:hover,.rightnav:hover {
     cursor: pointer;
 }
-hr{
-    margin: 0 13rem 0 20rem;
-    
+.hdc, .s1ctn3b,.sec2,.footer{
+    background-image:radial-gradient(#3e3e88, #020236 100%);
+}
+a, #hdcl, .s1ctn3b,.footer {
+    color: rgb(255, 255, 255);
 }
 /* header section styles*/
-h1 {
+.nvb_list,.nbl,.nvb{
+    display: flex;
+}
+#hdcl{
     font-weight: bold;
     font-size: 2.3rem;
-    width:34rem;
     font-family: "pacifico";
-    text-align: right;
-    color:rgb(255, 255, 255);;
 }
-.header-cont {
-    position: fixed;
-    background-color: rgb(30, 30, 167);;
-}
-.header-cont,.navbar{
-    display:flex;
+.hdc {
+    position: sticky;
+    top: 0;
     width: 100%;
-    justify-content: flex-end;
 }
-.navbar-list {
-    font-size: 1.2rem;
-    display: inline-flex;
-    justify-content: center;
+.nvb {
+    align-items: center;
+}
+.nvb_list {
+    font-size: 1.11rem;
     list-style-type: none;
-    width: 84%;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center; 
 }
-#sign {
-    font-size: 1.6rem;
+#nblog {
+    flex-basis: 60rem;
 }
-.navbar-list li:hover {
-    text-decoration: underline;
-}
-.navbar-list li {
-    width: 10rem;
-    text-align: center;
+.clk2,.clk3,.clk4{
+    padding-left: 1.5rem;
 }
 /* Section 1 styles*/
-.sec1 {
-    width: 100%;
-    height: 60rem;
+.s1ctn3, .s1ctn2,.s1ctn1 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    flex-basis: auto;
 }
-.container1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%; 
-    text-align: center; 
+.sec1 {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-rows: 10rem 22rem 5rem;
+    row-gap: 1.11rem;
+    justify-content: center;
+}
+.s1ctn1 {
+    text-align: center;
+    font-size: 2.4rem;
+    max-width: 80rem;
     align-items: center;
-    justify-content: space-evenly;
 }
-button:hover {
-    background-color: rgb(8, 8, 51);
+.s1ctn2im {
+    object-fit: contain;
 }
-.start {
+.s1ctn3b{
     width: 10rem;
     height: 2.8rem;
     font-size: 1.6rem;
     font-weight: bold;
     border-radius: 0.5rem;
     border: 2px solid rgb(15, 15, 15);
-    background-color: rgb(30, 30, 167);
-    color: rgb(255, 255, 255);
     font-family: "oswald", sans-serif;
-}  
-h2 {
-    padding-top: 2.5rem;
-    font-size: 2.8rem;
-    
 }
-.appimg {
-    width:40rem;
-    height:20rem;
-    border-radius: 5px;
+.s1ctn3 {
+    align-items: flex-end;
 }
 /* Section 2 styles*/
-.sec2 {
+.cont-box,.sec2, .s2ctn2slid,.s2ctn2 {
     display: flex;
-    flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60rem;
 }
-.sec2 h2 {
-    padding-top: 0;
-    width: 100%;;
-    text-align: center;
-    font-size: 2.8rem;
+.cont-box {
+    margin-top: 15rem;
+    justify-content: center;
+}
+.rightnav, .leftnav{
+  font-size: 2.8rem;
+  align-self: center;
+}
+.rightnav::before{
+    content:">";
+    font: 2.8rem 'Consolas';
+    font-weight:900;
+    color: rgb(255, 255, 255);
+    align-self: center;
+  }
+.leftnav::before {
+    content:"<";
+    font: 2.8rem 'Consolas';
+    font-weight:900;
+    color: rgb(255, 255, 255);
+    align-self: center;
+}
+.sec2,.s2ctn2 {
+    border-radius: 1rem;
+}
+.sec2 {
+    flex-direction: row;
+}
+.s2ctn2 {
+    flex-direction: column;
+    margin: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    width: 20.5rem;
+    height: 31.6rem;
+}
+.s2ctn2im,.s2ctn2d {
+    height: 40%;
+}
+.s2ctn2d {
+    flex-basis: 100%;
+}
+.fs2ctn2 {
+    font-size: 2.5rem;
     font-weight: bold;
-    color: rgb(15, 15, 15);
+    text-align: center;
+    height:20%;
 }
-.container2 img {
-    height: 20rem;
-    width: 40rem;
-    border-radius: 5px;
+.fs2ctn2d {
+    text-align: center;
+    font-size: 1rem;
+    white-space: normal;
+    line-height: 2rem;
+    box-sizing: border-box;
 }
-.container2 {
+.fs2ctn2im {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+.s2ctn2slidctn {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     text-align: center;
     font-size: 1.2rem;
-    width: 100%;
-    height: 100%;
     justify-content: space-evenly;
+    margin: 1.2rem auto 11.222rem auto;
 }
 .sliders {
     display: inline-flex;
-    flex-flow: row wrap;
     list-style-type: none;
-    width: 30%;
     justify-content: center;
-    align-items: center;
 } 
 .sliders li button {
     margin: 1.2rem;
     width: 3.4rem;
-    height: 6px;
-    border: 1px solid rgb(30, 30, 167);
-}
-.container2 p {
-    font-size: 1.2rem;
-    line-height: 2.8rem;
-    text-align: center;
-    white-space: normal;
-    width: 30rem;
+    height: .4rem;
+    border: .11rem solid rgb(30, 30, 167);
 }
 /*Footer sytles*/
 .footer {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(15, 15, 15);
+    flex-direction: row;
+    justify-content: center;
 }
-.footer, .navbar-list2 li a {
-    color: rgb(255, 255, 255);
+.fctnr {
+    align-self: flex-end;
+    margin-left: 15rem;
+    padding-bottom: 1rem;
 }
-.footer p {
-    margin-bottom:1.7rem;
-    padding-top: 1.2rem;
-}
-.navbar-list2,.social-media{
-    list-style-type: none;
+.nvbf2,.nvbf1{
     font-size: 1.2rem;
     line-height: 3.4rem;
 }
-.navbar-footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
+.nvbfl2 li {
+    list-style: none;
 }
-.social-media {
+.nvbf2 {
     font-family:"pacifico";
+    padding-left: 13rem;
 }
 /*media queries*/
 @media only screen and (max-width:400px) {
